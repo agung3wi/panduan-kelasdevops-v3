@@ -13,5 +13,5 @@
      docker run --name laravel-app -p 9000:80 -d <username_docker_hub>/laravel-app:v1
      ```
 4. Buat Load balancer dengan settingan berikut.
-    [source](https://raw.githubusercontent.com/agung3wi/panduan-kelasdevops/master/sesi%205/5.%20implementasi%load%20balancer/nginx.conf).
+    [source](https://raw.githubusercontent.com/agung3wi/panduan-kelasdevops/main/sesi%205/5.%20implementasi%load%20balancer/nginx.conf).
 

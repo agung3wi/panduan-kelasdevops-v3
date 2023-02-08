@@ -46,7 +46,7 @@
 
 ## Cara menjalankan Pipeline Jenkins
 * [User Handbook Pipeline](https://www.jenkins.io/doc/book/pipeline/)
-* [Referensi Jenkinsfile content](https://raw.githubusercontent.com/agung3wi/kelasdevops/master/Jenkinsfile)
+* [Referensi Jenkinsfile content](https://raw.githubusercontent.com/agung3wi/kelasdevops/main/Jenkinsfile)
 
 1. Buat file `Jenkinsfile` di dalam `DEVOPSAPRIL-LARAVEL` dengan menggunakan code editor untuk mengisikan script agar pipeline bisa berjalan
 2. Pada Jenkinsfile, copy-kan script berikut

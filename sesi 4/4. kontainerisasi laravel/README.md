@@ -1,7 +1,7 @@
 # Sesi 5 - Kontainerisasi Laravel 
 
 Langkah-langkah untuk mengkontainerisasi laravel cukup mudah:
-1. Tambahkan Dockerfile dari source berikut ini ke dalam project laravel yang baru. [source](https://raw.githubusercontent.com/agung3wi/panduan-kelasdevops/master/sesi%205/4.%20kontainerisasi%20laravel/Dockerfile).
+1. Tambahkan Dockerfile dari source berikut ini ke dalam project laravel yang baru. [source](https://raw.githubusercontent.com/agung3wi/panduan-kelasdevops/main/sesi%205/4.%20kontainerisasi%20laravel/Dockerfile).
 2. Build docker image dengan perintah berikut
      ```
      docker build -t laravel-app .

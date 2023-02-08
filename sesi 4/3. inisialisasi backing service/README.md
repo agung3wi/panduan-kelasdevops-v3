@@ -5,7 +5,7 @@
 ```
 nano docker-compose.yml
 ```
-Isikan kontent dari [docker-compose.yml](https://raw.githubusercontent.com/agung3wi/panduan-kelasdevops/master/sesi%205/3.%20inisialisasi%20backing%20service/docker-compose.yml) berikut, kemudian simpan.
+Isikan kontent dari [docker-compose.yml](https://raw.githubusercontent.com/agung3wi/panduan-kelasdevops/main/sesi%205/3.%20inisialisasi%20backing%20service/docker-compose.yml) berikut, kemudian simpan.
 
 2. Kemudian jalankan
 ```
