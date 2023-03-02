@@ -1,5 +1,5 @@
 [prod]
-18.130.41.168 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
+13.229.224.3 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 [dev]
-13.42.10.12 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
+13.250.3.180 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa

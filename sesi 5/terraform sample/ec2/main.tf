@@ -10,12 +10,12 @@ terraform {
 
 provider "aws" {
   profile = "default"
-  region = "eu-west-2"
+  region = "ap-southeast-1"
 }
 
 variable "instance_tags" {
   type = list
-  default = ["dev", "prod", "vm3"]
+  default = ["dev", "prod"]
 }
 
 resource "aws_key_pair" "keypair_demo" {
@@ -54,7 +54,7 @@ resource "aws_security_group_rule" "incoming" {
 
 resource "aws_instance" "ec2" {
   count = 2
-  ami           = "ami-0beb6fc68811e5682" # ubuntu 20.04 region singapura
+  ami           = "ami-05c8486d62efc5d07" # ubuntu 20.04 region singapura
   instance_type = "t2.micro"
   key_name = "${aws_key_pair.keypair_demo.key_name}"
   vpc_security_group_ids = ["${aws_security_group.allow_all.id}"]

@@ -7,4 +7,4 @@
       #command: sudo apt update
 
     - name: Install Nginx
-      apt: name=nginx state=latest
+      command: sudo apt install nginx -y
