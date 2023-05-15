@@ -9,7 +9,7 @@ helm install ingress-controller ingress-nginx/ingress-nginx
 Untuk Case di AWS EKS install ingress nginx dapat dilakukan dengan 
 ```
 wget https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.6.4/deploy/static/provider/aws/deploy.yaml
-sed -i 's/externalTrafficPolicy: Lokal/externalTrafficPolicy: Cluster/g' deploy.yaml
+sed -i 's/externalTrafficPolicy: Local/externalTrafficPolicy: Cluster/g' deploy.yaml
 kubectl apply -f deploy.yaml
 ```
 
