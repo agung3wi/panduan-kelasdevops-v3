@@ -8,7 +8,7 @@ provider "aws" {
 data "aws_availability_zones" "available" {}
 
 locals {
-  cluster_name = "education-eks-${random_string.suffix.result}"
+  cluster_name = "eks-kelasdevops"
 }
 
 resource "random_string" "suffix" {
@@ -16,9 +16,15 @@ resource "random_string" "suffix" {
   special = false
 }
 
+# resource "aws_eip" "nat" {
+#   count = 3
+
+#   vpc = true
+# }
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "3.19.0"
+  version = "5.0.0"
 
   name = "education-vpc"
 
@@ -41,6 +47,8 @@ module "vpc" {
     "kubernetes.io/cluster/${local.cluster_name}" = "shared"
     "kubernetes.io/role/internal-elb"             = 1
   }
+
+  # external_nat_ip_ids = "${aws_eip.nat.*.id}"
 }
 
 module "eks" {
