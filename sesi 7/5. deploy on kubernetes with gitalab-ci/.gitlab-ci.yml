@@ -1,0 +1,32 @@
+services:
+  - docker:dind
+variables:
+  LATEST_VER: devopsmaret2023/laravel-app:v1
+stages:
+  - build
+  - test
+  - deploy
+docker build and push:
+  image: docker:latest
+  stage: build
+  only:
+    - master
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - docker build -t $LATEST_VER .
+    - docker push $LATEST_VER
+
+test:
+  stage: test
+  image: bearengineer/awscli-kubectl
+  script:
+    - echo "Test..."
+    - aws eks --region us-east-1 update-kubeconfig --name eks-kelasdevops
+
+deploy:
+  stage: deploy
+  image: bearengineer/awscli-kubectl
+  script:
+    - echo "Deploy..."
+    - aws eks --region us-east-1 update-kubeconfig --name eks-kelasdevops
+    - kubectl rollout restart deployment laravel
