@@ -1,9 +1,6 @@
 # Docker
 
-* [Referensi Install Postgre SQL Pada Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart-id)
-* [Referensi Install Apache](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-id)
-* [Referensi Install Docker](https://docs.docker.com/get-docker)
-* [Docker Hub](hub.docker.com)
+* [Referensi Install Docker](https://www.youtube.com/watch?v=TC07wXKodvQ&t=6s)
 
 ## Pengertian Docker
 
