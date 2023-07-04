@@ -1,8 +1,7 @@
 # Install Docker
 
 * [Referensi Install Docker Windows](https://docs.docker.com/desktop/windows/install/)
-* [Referensi Video Youtube Install Docker Windows](https://youtu.be/_9AWYlt86B8)
-* [Referensi Video Youtube Install Docker Windows 2](https://youtu.be/x3KEcEp5paQ)
+* [Referensi Video Youtube Install Docker Windows](https://www.youtube.com/watch?v=TC07wXKodvQ&t=6s)
 * [Referensi Install Docker Mac](https://docs.docker.com/desktop/mac/install/)
 
 ## Install Docker dari installer
